@@ -367,4 +367,111 @@ p { font-family: "Cormorant Garamond"; font-size: 1.7rem; line-height: 1.6; marg
 
 .polaroid { position: absolute; background: white; padding: 1rem; width: 220px; height: 280px; border-radius: 18px; box-shadow: 0 12px 30px rgba(0,0,0,.15); display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .polaroid img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+
+/* ================================
+   📱 MOBILE RESPONSIVE FIXES
+   ================================ */
+
+@media (max-width: 768px) {
+
+  /* HERO TEXT */
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  /* POLAROIDS → stack + shrink */
+  .polaroid {
+    position: relative !important;
+    width: 160px;
+    height: 200px;
+    margin: 1rem auto;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .photos {
+    flex-direction: column;
+  }
+
+  /* inside joke layout */
+  .joke-wrap {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .joke-photo {
+    width: 180px;
+  }
+
+  .joke-center {
+    text-align: center;
+  }
+
+  /* envelope scaling */
+  .envelope-emoji {
+    font-size: 5rem;
+  }
+
+  .tap-hint {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  /* letter image scaling */
+  .spotlight {
+    width: 90vw;
+    border-radius: 16px;
+  }
+
+  /* gate box */
+  .gate-box {
+    width: 90%;
+  }
+
+  .gate input {
+    width: 100%;
+  }
+}
+
+/* ================================
+   📱 SMALL PHONES (<420px)
+   ================================ */
+
+@media (max-width: 420px) {
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .envelope-emoji {
+    font-size: 4.2rem;
+  }
+
+  .polaroid {
+    width: 140px;
+    height: 180px;
+  }
+
+  .joke-photo {
+    width: 150px;
+  }
+
+  .scroll-hint {
+    font-size: 1rem;
+  }
+}
 </style>
