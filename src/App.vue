@@ -1,7 +1,7 @@
 <template>
   <transition name="intro-fade">
     <div v-if="loading" class="intro">
-      <div class="intro-text">Joana</div>
+      <div class="intro-text">My Love</div>
     </div>
   </transition>
 
